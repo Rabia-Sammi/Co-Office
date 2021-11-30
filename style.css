@@ -116,7 +116,11 @@ p {color: grey; font-family: 'GiloryRegular'; font-size: 14px;}
 .pricing .btn-green{border-radius: 0px; width:70%;}
 .pricing table th{color: #00927D;padding-bottom: 50px;}
 
-@media only screen and (max-width: 992px){ .pricing table td{padding-right: 50px;} .pricing .btn-green{border-radius: 0px; width:100%;} }
+@media only screen and (max-width: 992px){ 
+    .pricing table td{padding-right: 50px;} 
+    .pricing .btn-green{border-radius: 0px; width:100%;} 
+    .pricing .data-pricing{ padding-left: 30px;}
+}
 
 
 /* Footer */
