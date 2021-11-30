@@ -75,14 +75,14 @@ p {color: grey; font-family: 'GiloryRegular'; font-size: 14px;}
 #thumbnail .owl-stage-outer{margin: 0px 30px;}
 .owl-prev {
     position: absolute;
-    top: -37%;
+    top: 9%;
     display: block !important;
     border:0px solid black;
     margin: 0px;
 }
 .owl-next{
     position: absolute;
-    top: -37%;
+    top: 9%;
     right: 0%;
     display: block !important;
     border:0px solid black;
