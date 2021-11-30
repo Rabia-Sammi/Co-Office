@@ -93,7 +93,7 @@ p {color: grey; font-family: 'GiloryRegular'; font-size: 14px;}
     }
 /* Card Section */
 
-.cards-sec{padding: 100px 0px;  }
+.cards-sec{ padding-top: 100px;  padding-bottom: 60px; }
 .cards-sec h1{ font-family: 'GiloryBold'; color:#626365;padding-bottom: 20px;}
 .cards-sec h2{color:#626365}
 .cards-sec .card{height: 100%; }
@@ -111,10 +111,12 @@ p {color: grey; font-family: 'GiloryRegular'; font-size: 14px;}
 .pricing .btn-pricing{width: 100%; border: none; background-color:#EEF4F2; color: #626365;text-align: center; padding: 20px; font-family: "GiloryBold"; font-size: 14px; font-weight: bold;}
 .pricing .data-pricing {margin-top: 20px; border: 2px solid #00927D ;}
 .pricing table{width: 100%; text-align: center; margin-top: 20px;}
-.pricing table td,.pricing table th{padding-bottom: 50px;}
-.pricing .active{ color: #00927D;     box-shadow: -5px 4px 12px lightgrey;}
+.pricing table td{font-size:18px; font-weight: bold;padding-bottom: 50px;}
+.pricing .active{ color: #00927D; box-shadow: -5px 4px 12px lightgrey;}
 .pricing .btn-green{border-radius: 0px; width:70%;}
-.pricing th{color: #00927D;}
+.pricing table th{color: #00927D;padding-bottom: 50px;}
+
+@media only screen and (max-width: 992px){ .pricing table td{padding-right: 50px;} .pricing .btn-green{border-radius: 0px; width:100%;} }
 
 
 /* Footer */
@@ -127,3 +129,10 @@ p {color: grey; font-family: 'GiloryRegular'; font-size: 14px;}
 .footer .icons ul{justify-content: flex-end;}
 .footer .icons li{ border-radius: 50% ; background-color: white; border: none; padding: 2px; text-align: center; font-size: 14px; margin: 4px 2px;}
 .footer .icons ul li span i{width: 29px; height: 26px; top: 5px; position: relative; color:#626365;}
+
+@media only screen and (max-width: 992px){
+    .footer ul{padding: 0px; text-align: center; justify-content: space-around;}
+    .footer ul li{padding-right: 0px;}
+    .footer .icons ul{justify-content: space-around;}
+
+}
