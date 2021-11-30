@@ -1,0 +1,129 @@
+
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url(./fonts/OpenSans-Regular.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'GiloryHeavy';
+    src: url(./fonts/Gilroy-Heavy.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'GiloryBold';
+    src: url(./fonts/Gilroy-Bold.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'GiloryRegular';
+    src: url(./fonts/Gilroy-Regular.woff) format('woff')
+}
+
+
+@media only screen and (min-width: 1400px){
+    .container{max-width:1450px!important;}
+}
+@media only screen and (min-width: 1200px){
+.container{max-width:1250px!important;}
+}
+
+
+
+
+
+
+p {color: grey; font-family: 'GiloryRegular'; font-size: 14px;}
+
+
+.header{ border-top: 5px solid #00927D; border-bottom: 2px solid lightgray;padding: 20px 0px; font-size: 13px; font-family: "OpenSans";}
+.header .logo{ justify-content: left;}
+.header .logo img{width: 70%;} 
+.header .nav-bar{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: "OpenSans";
+    color:#626365;
+}
+.header .navbar button span i{color:#00927D; font-size: 20px;} 
+.header .nav-bar ul li{ padding: 0px 20px;} 
+.header .nav-bar ul li a{ color: #626365; text-decoration: none;}
+.header .nav-btn{ display: flex; justify-content: right;}
+.header .nav-btn button{ margin-left: 10px;}
+
+.btn-green{ border: none; border-radius: 3px; background-color:#00927D; color:white; font-weight: bold;padding: 8px 25px;}
+.btn-white{border: none; color:#00927D; background-color:#EEF4F2; font-weight: bold;padding: 8px 25px;}
+
+@media only screen and (max-width: 992px){
+    .header .nav-bar .navbar{padding: 0px;}
+    .header .nav-btn{ display: flex; justify-content: space-evenly; padding-top: 20px;}
+    }
+/* Main-Section */
+
+/* .main-sec .welcome {padding-top:55px;} */
+.main-sec .welcome{ padding-right:60px ;}
+.main-sec .welcome h1{  font-family: 'GiloryHeavy'; color: #626365; font-size: 40px;}
+.main-sec .welcome p{text-align: justify; padding: 30px 0px;}
+/* .main-sec .slider{margin-left: 20px;} */
+.main-sec .slider img{ height: 300px;}
+.main-sec .thumbnails {padding-top: 30px;}
+.main-sec .thumbnails img{width: 70px!important;border-radius: 5px;}
+.main-sec .thumbnails button span{color:black; font-size: 40px; }
+
+#thumbnail .owl-stage-outer{margin: 0px 30px;}
+.owl-prev {
+    position: absolute;
+    top: -37%;
+    display: block !important;
+    border:0px solid black;
+    margin: 0px;
+}
+.owl-next{
+    position: absolute;
+    top: -37%;
+    right: 0%;
+    display: block !important;
+    border:0px solid black;
+    margin: 0px;
+}
+@media only screen and (max-width: 992px){
+    .main-sec .welcome{ padding-right:0px; padding-bottom: 20px;}
+    }
+/* Card Section */
+
+.cards-sec{padding: 100px 0px;  }
+.cards-sec h1{ font-family: 'GiloryBold'; color:#626365;padding-bottom: 20px;}
+.cards-sec h2{color:#626365}
+.cards-sec .card{height: 100%; }
+.cards-sec .card-btn {padding: 10px; }
+.cards-sec .card-btn button{color:#626365; border: none; font-size: 13px; font-weight: 600; padding: 5px 10px;}
+
+/* Ben Section */
+.ben-sec{ background-color: #EEF4F2;color: #626365; padding: 30px 0px;}
+.ben-sec h2{font-size: 23px;}
+.ben-sec h3{font-size: 17px; font-family: 'OpenSans'; font-weight: bold; padding: 15px 0px; letter-spacing: 0.5px;}
+.ben-sec .ben{ text-align: center; padding: 30px 0px;}
+
+/* Pricing Section */
+.pricing{padding: 50px 0px;}
+.pricing .btn-pricing{width: 100%; border: none; background-color:#EEF4F2; color: #626365;text-align: center; padding: 20px; font-family: "GiloryBold"; font-size: 14px; font-weight: bold;}
+.pricing .data-pricing {margin-top: 20px; border: 2px solid #00927D ;}
+.pricing table{width: 100%; text-align: center; margin-top: 20px;}
+.pricing table td,.pricing table th{padding-bottom: 50px;}
+.pricing .active{ color: #00927D;     box-shadow: -5px 4px 12px lightgrey;}
+.pricing .btn-green{border-radius: 0px; width:70%;}
+.pricing th{color: #00927D;}
+
+
+/* Footer */
+
+.footer{ background-color: #00927D; padding: 35px 10px; }
+.footer ul{display: flex}
+.footer ul li{font-family: 'GiloryBold'; list-style-type: none; color: #EEF4F2;padding-right: 40px; font-weight: 500; font-size: 13px;}
+.footer p{color: white; text-align: center; padding-top: 20px;}
+.footer .row{border-bottom: 1px solid lightgray;}
+.footer .icons ul{justify-content: flex-end;}
+.footer .icons li{ border-radius: 50% ; background-color: white; border: none; padding: 2px; text-align: center; font-size: 14px; margin: 4px 2px;}
+.footer .icons ul li span i{width: 29px; height: 26px; top: 5px; position: relative; color:#626365;}
