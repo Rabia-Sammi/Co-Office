@@ -49,12 +49,17 @@ p {color: grey; font-family: 'GiloryRegular'; font-size: 14px;}
 }
 .header .navbar button span i{color:#00927D; font-size: 20px;} 
 .header .nav-bar ul li{ padding: 0px 20px;} 
-.header .nav-bar ul li a{ color: #626365; text-decoration: none;}
+.header .nav-bar ul li a{ color: #626365; text-decoration: none; padding-bottom: 5px;}
+.header .nav-bar ul li a:hover{ color: #00927D; border-bottom: 2px solid  #00927D ;}
 .header .nav-btn{ display: flex; justify-content: right;}
 .header .nav-btn button{ margin-left: 10px;}
+.header .nav-btn button.btn-white:hover{background-color: lightgray; }
 
-.btn-green{ border: none; border-radius: 3px; background-color:#00927D; color:white; font-weight: bold;padding: 8px 25px;}
-.btn-white{border: none; color:#00927D; background-color:#EEF4F2; font-weight: bold;padding: 8px 25px;}
+.btn-green{ border: none; border-radius: 3px; background-color:#00927D; color:white; font-family: "OpenSans"; font-weight: bold;padding: 8px 25px;}
+.btn-white{border: none; border-radius: 3px; color:#00927D; background-color:#EEF4F2; font-weight: bold;padding: 8px 25px;}
+button.btn-green:hover{background-color: #037765; }
+button.btn-white:hover{background-color: lightgray; }
+
 
 @media only screen and (max-width: 992px){
     .header .nav-bar .navbar{padding: 0px;}
@@ -62,11 +67,11 @@ p {color: grey; font-family: 'GiloryRegular'; font-size: 14px;}
     }
 /* Main-Section */
 
-/* .main-sec .welcome {padding-top:55px;} */
 .main-sec .welcome{ padding-right:60px ;}
 .main-sec .welcome h1{  font-family: 'GiloryHeavy'; color: #626365; font-size: 40px;}
 .main-sec .welcome p{text-align: justify; padding: 30px 0px;}
-/* .main-sec .slider{margin-left: 20px;} */
+.main-sec .welcome button.btn-green{font-size: 14px;}
+
 .main-sec .slider img{ height: 300px;}
 .main-sec .thumbnails {padding-top: 30px;}
 .main-sec .thumbnails img{width: 70px!important;border-radius: 5px;}
@@ -97,24 +102,27 @@ p {color: grey; font-family: 'GiloryRegular'; font-size: 14px;}
 .cards-sec h1{ font-family: 'GiloryBold'; color:#626365;padding-bottom: 20px;}
 .cards-sec h2{color:#626365}
 .cards-sec .card{height: 100%; }
+.cards-sec .card:hover{border:1px solid #00927D; }
 .cards-sec .card-btn {padding: 10px; }
-.cards-sec .card-btn button{color:#626365; border: none; font-size: 13px; font-weight: 600; padding: 5px 10px;}
-
+.cards-sec .card-btn button{color:#626365; border: none; border-radius:3px; font-size: 13px; font-weight: 600; padding: 5px 10px;}
+.cards-sec .card-btn button:hover{ background-color:#00927D; color:white;}
 /* Ben Section */
 .ben-sec{ background-color: #EEF4F2;color: #626365; padding: 30px 0px;}
 .ben-sec h2{font-size: 23px;}
 .ben-sec h3{font-size: 17px; font-family: 'OpenSans'; font-weight: bold; padding: 15px 0px; letter-spacing: 0.5px;}
-.ben-sec .ben{ text-align: center; padding: 30px 0px;}
+.ben-sec .ben{ text-align: center; padding: 30px 0px; transition: transform .2s;}
+.ben-sec .ben:hover{transform: scale(1.1);}
 
 /* Pricing Section */
-.pricing{padding: 50px 0px;}
+.pricing{padding: 50px 0px; font-family: "OpenSans";}
 .pricing .btn-pricing{width: 100%; border: none; background-color:#EEF4F2; color: #626365;text-align: center; padding: 20px; font-family: "GiloryBold"; font-size: 14px; font-weight: bold;}
-.pricing .data-pricing {margin-top: 20px; border: 2px solid #00927D ;}
+.pricing .btn-pricing:hover{color: #00927D ; box-shadow: -5px 4px 12px lightgrey; }
+.pricing .data-pricing {margin-top: 20px; border: 2px solid #24D199 ;}
 .pricing table{width: 100%; text-align: center; margin-top: 20px;}
-.pricing table td{font-size:18px; font-weight: bold;padding-bottom: 50px;}
+.pricing table td{font-size:17px; font-weight: bold;padding-bottom: 50px;}
 .pricing .active{ color: #00927D; box-shadow: -5px 4px 12px lightgrey;}
-.pricing .btn-green{border-radius: 0px; width:70%;}
-.pricing table th{color: #00927D;padding-bottom: 50px;}
+.pricing .btn-green{width:70%;}
+.pricing table th{color: #27bd8d; padding-bottom: 30px;}
 
 @media only screen and (max-width: 992px){ 
     .pricing table td{padding-right: 50px;} 
