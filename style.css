@@ -10,7 +10,7 @@
     src: url(./fonts/Gilroy-Heavy.woff) format('woff')
 }
 
-@font-face {
+ @font-face {
     font-family: 'GiloryBold';
     src: url(./fonts/Gilroy-Bold.woff) format('woff')
 }
@@ -27,10 +27,6 @@
 @media only screen and (min-width: 1200px){
 .container{max-width:1250px!important;}
 }
-
-
-
-
 
 
 p {color: grey; font-family: 'GiloryRegular'; font-size: 14px;}
@@ -69,7 +65,7 @@ button.btn-white:hover{background-color: lightgray; }
 
 .main-sec .welcome{ padding-right:60px ;}
 .main-sec .welcome h1{  font-family: 'GiloryHeavy'; color: #626365; font-size: 40px;}
-.main-sec .welcome p{text-align: justify; padding: 30px 0px;}
+.main-sec .welcome p, .co-sec p, .value-sec p{text-align: justify; padding: 30px 0px;}
 .main-sec .welcome button.btn-green{font-size: 14px;}
 
 .main-sec .slider img{ height: 300px;}
@@ -78,21 +74,8 @@ button.btn-white:hover{background-color: lightgray; }
 .main-sec .thumbnails button span{color:black; font-size: 40px; }
 
 #thumbnail .owl-stage-outer{margin: 0px 30px;}
-.owl-prev {
-    position: absolute;
-    top: 9%;
-    display: block !important;
-    border:0px solid black;
-    margin: 0px;
-}
-.owl-next{
-    position: absolute;
-    top: 9%;
-    right: 0%;
-    display: block !important;
-    border:0px solid black;
-    margin: 0px;
-}
+.owl-prev,.owl-next { position: absolute; top: 9%; display: block !important; border:0px solid black; margin: 0px;}
+.owl-next{right: 0%;}
 @media only screen and (max-width: 992px){
     .main-sec .welcome{ padding-right:0px; padding-bottom: 20px;}
     }
@@ -146,5 +129,28 @@ button.btn-white:hover{background-color: lightgray; }
     .footer ul{padding: 0px; text-align: center; justify-content: space-around;}
     .footer ul li{padding-right: 0px;}
     .footer .icons ul{justify-content: space-around;}
+}
 
+/* Internal Page */
+
+/* Co for Freelance Section */
+.co-sec{ padding-top: 40px;}
+.co-sec .txt{padding: 0px 30px 0px 20px; }
+.co-sec .features{padding: 60px 30px; text-align: center;}
+.co-sec .features h6{ color: grey; font-family: "OpenSans"; font-size: 12px; padding-top: 15px;}
+.co-sec .txt h1, .value-sec .txt h1{font-family: 'GiloryBold'; color: #626365;}
+
+/* Value Section */
+.value-sec{background-color: #FDEFEE; margin-bottom: 50px;}
+.value-sec .txt{padding: 40px 40px 0px 20px;}
+.value-sec .txt h5{color: grey;}
+.left{background-color: #EAF8F9; } 
+.left .txt{padding: 40px 35px 0px 40px;}
+
+
+.co-sec img, .value-sec img {width: 100%;}
+
+@media only screen and (max-width: 992px){
+    .co-sec .icons{ flex-wrap: wrap;}
+    .value-sec .txt{padding: 20px 10px 0px 10px;}
 }
