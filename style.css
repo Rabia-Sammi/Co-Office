@@ -125,14 +125,14 @@ button.btn-white:hover{background-color: lightgray; }
 
 /* Internal Page */
 
-/* Co for Freelance Section */
+
 .co-sec{ padding-top: 40px;}
 .co-sec .txt{padding: 0px 30px 0px 20px; }
 .co-sec .features{padding: 60px 30px; text-align: center;}
 .co-sec .features h6{ color: grey; font-family: "OpenSans"; font-size: 12px; padding-top: 15px;}
 .co-sec .txt h1, .value-sec .txt h1, .map-sec h1{font-family: 'GiloryBold'; color: #626365;}
 
-/* Value Section */
+
 .value-sec{background-color: #FDEFEE; margin-bottom: 50px;}
 .value-sec .txt{padding: 40px 40px 0px 20px;}
 .value-sec .txt h5{color: grey;}
@@ -151,6 +151,7 @@ button.btn-white:hover{background-color: lightgray; }
 .address-sec {padding: 50px 100px;}
 .address-sec .info{display: flex;padding: 20px 30px 80px 30px;}
 .address-sec .info span{ padding-right: 20px;}
+.address-sec .info span i{ color: #00927D; font-size: 16px;}
 .address-sec .info p{color: grey;}
 .address-sec .en-form h2{font-family: "GiloryBold";}
 .address-sec .en-form p{color: #00927D ;}
